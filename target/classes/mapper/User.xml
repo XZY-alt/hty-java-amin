@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hty.htyjavaadmin.mapper.UserMapper1">
+<!--mybatis-x无效，可能是哪个配置的原因-->
+    <!--更新用户信息-->
+<!--    <update id="updataUser" parameterType="com.hty.htyjavaadmin.entity.User1">-->
+<!--        update tab_User set-->
+<!--        <if test="name!=null">-->
+<!--            name=#{name},-->
+<!--        </if>-->
+<!--        <if test="nickName!=null">-->
+<!--            nickName=#{nickName},-->
+<!--        </if>-->
+<!--        <if test="age!=null">-->
+<!--            age=#{age},-->
+<!--        </if>-->
+<!--        <if test="address!=null">-->
+<!--            address=#{address}-->
+<!--        </if>-->
+<!--        where  id=#{id}-->
+<!--    </update>-->
+<!--    &lt;!&ndash;新增用户&ndash;&gt;-->
+<!--    <insert id="insertUser" parameterType="com.hty.htyjavaadmin.entity.User1">-->
+<!--        insert into tab_user (name,nickName,age,address) values (#{name},#{nickName},#{age},#{address})-->
+<!--    </insert>-->
+<!--    &lt;!&ndash;分页查询&ndash;&gt;-->
+<!--    <select id="selectPage"  resultType="com.hty.htyjavaadmin.entity.User1">-->
+<!--        select * from tab_user order by createTime asc limit #{pageNum},#{pageSize}-->
+<!--    </select>-->
+<!--    &lt;!&ndash;多条件查询，根据姓名、地址模糊查询，手机号模糊查询,好像这个查询有顺序&ndash;&gt;-->
+<!--    <select id="selectByCondition" resultType="com.hty.htyjavaadmin.entity.User1">-->
+<!--        select * from tab_user  where id=-1-->
+<!--        <if test="name!=null">-->
+<!--            or name like concat('%',#{name},'%')-->
+<!--        </if>-->
+<!--        <if test="telPhone!=null">-->
+<!--           or  telPhone like concat('%',#{telPhone},'%')-->
+<!--        </if>-->
+<!--        <if test="address!=null">-->
+<!--            or address like concat('%',#{address},'%')-->
+<!--        </if>-->
+<!--    </select>-->
+    <!--编辑-->
+
+
+</mapper>

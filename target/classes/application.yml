@@ -1,0 +1,27 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/htyadmin
+    username: root
+    password: root
+  jackson:
+    time-zone: GMT+8
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+#Property 'mapperLocations' was not specified. 错误提示，因为我在mapper-localhosts:下添加了一段注释  还是这个地方的原因，不能添加换行，因为classpath的意义
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+# 使用框架，基本上不用些s
+
+#配置mybatis-plus  配置成功
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
